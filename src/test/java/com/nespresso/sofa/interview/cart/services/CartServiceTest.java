@@ -33,7 +33,7 @@ public class CartServiceTest {
     private CartStorage cartStorage;
 
     @InjectMocks
-    private CartService cartService = new CartService(promotionEngine, cartStorage);
+    private CartService cartService;
 
     private Cart currentCart;
 

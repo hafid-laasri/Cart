@@ -21,9 +21,7 @@ public class PromotionEngineTest {
     public static final String GIFT = "7000";
 
     private final String randomProduct = randomUUID().toString();
-
     public PromotionEngine promotionEngine = new PromotionEngine();
-
     @Test
     public void empty_cart() {
         assertThat(promotionEngine.apply(new Cart()), emptyCart());
